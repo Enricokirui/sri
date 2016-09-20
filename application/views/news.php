@@ -5,11 +5,11 @@
     <section class="content-header">
       <h1>
         News & Events
-        <small><button type="button" href="<?php echo site_url("welcome/addnews");?>" class="btn btn-block btn-primary btn-xs">Add New</button></small>
+        <small><a href="<?php echo site_url("welcome/addnews");?>" class="btn btn-info btn-xs" role="button">Add New</a></small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">News & Events</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>News & Events</a></li>
+        <li class="active">View</li>
       </ol>
     </section>
 
@@ -47,14 +47,14 @@
                   <th>Action</th>
                 </tr>
                 <tr>
-                  <td>EnricoKirui</td>
+                  <td>JKUAT</td>
                   <td>John Doe</td>
-                  <td>Johndoe@gmail.com</td>
-                  <td>Bacon.</td>
-                  <td><span class="label label-success">Admin</span></td>
+                  <td>Johndoe</td>
+                  <td>21/12/2121</td>
+                  <td><span class="label label-success">Delivered</span></td>
                   <td>
-                    <a href="<?php echo site_url("welcome/addnews");?>" class="link-p"> Edit </a>
-                    <a href="<?php echo site_url("welcome/addnews");?>" class="link-p"> Delete </a>
+                    <a href="<?php echo site_url("welcome/editnews");?>" class="btn btn-info btn-xs" role="button">Edit</a>
+                    <a href="<?php echo site_url("welcome/deletenews");?>" class="btn btn-danger btn-xs" role="button">Delete</a>
                   </td>
                 </tr>
 

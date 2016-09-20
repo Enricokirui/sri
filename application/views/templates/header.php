@@ -16,6 +16,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="<?php echo base_url("plugins/daterangepicker/daterangepicker.css");?>">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="<?php echo base_url("plugins/datepicker/datepicker3.css");?>">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="<?php echo base_url("plugins/iCheck/all.css");?>">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="<?php echo base_url("plugins/colorpicker/bootstrap-colorpicker.min.css");?>">
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="<?php echo base_url("plugins/timepicker/bootstrap-timepicker.min.css");?>">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="<?php echo base_url("plugins/select2/select2.min.css");?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url("dist/css/AdminLTE.min.css");?>">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
@@ -162,53 +174,53 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Optionally, you can add icons to the links -->
         <li class="active treeview">
           <a href="<?php echo site_url("welcome/dashboard");?>">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <i class="fa fa-dashboard"></i> <span> Dashboard </span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Home</span>
+          <a href="#"><i class="fa fa-home"></i> <span> Home </span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+              <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/callaction");?>">Call to action</a></li>
-            <li><a href="<?php echo site_url("welcome/introduction");?>">Introduction</a></li>
-            <li><a href="<?php echo site_url("welcome/features");?>">Features</a></li>
+            <li><a href="<?php echo site_url("welcome/callaction");?>"><i class="fa fa-circle-o"></i> Call to action</a></li>
+            <li><a href="<?php echo site_url("welcome/introduction");?>"> <i class="fa fa-circle-o"></i>Introduction</a></li>
+            <li><a href="<?php echo site_url("welcome/features");?>"><i class="fa fa-circle-o"></i> Features</a></li>
           </ul>
         </li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>News & Events</span>
+          <a href="#"><i class="fa fa-newspaper-o"></i> <span> News & Events</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+              <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/news");?>">View</a></li>
-            <li><a href="<?php echo site_url("welcome/addnews");?>">New</a></li>
+            <li><a href="<?php echo site_url("welcome/news");?>"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="<?php echo site_url("welcome/addnews");?>"><i class="fa fa-circle-o"></i> New</a></li>
           </ul>
         </li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Users</span>
+          <a href="#"><i class="fa fa-user"></i> <span> Users </span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+              <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/users");?>">View</a></li>
-            <li><a href="<?php echo site_url("welcome/addusers");?>">Add New</a></li>
+            <li><a href="<?php echo site_url("welcome/users");?>"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="<?php echo site_url("welcome/addusers");?>"><i class="fa fa-circle-o"></i> Add New</a></li>
           </ul>
         </li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Settings</span>
+          <a href="#"><i class="fa fa-gear"></i> <span> Settings </span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+              <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/sliders");?>">Home Sliders</a></li>
-            <li><a href="<?php echo site_url("welcome/footers");?>">Footer</a></li>
-            <li><a href="<?php echo site_url("welcome/contacts");?>">Contacts</a></li>
+            <li><a href="<?php echo site_url("welcome/sliders");?>"><i class="fa fa-circle-o"></i> Home Sliders</a></li>
+            <li><a href="<?php echo site_url("welcome/footers");?>"><i class="fa fa-circle-o"></i> Footer</a></li>
+            <li><a href="<?php echo site_url("welcome/contacts");?>"><i class="fa fa-circle-o"></i> Contacts</a></li>
           </ul>
         </li>
       </ul>

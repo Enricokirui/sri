@@ -5,11 +5,11 @@
     <section class="content-header">
       <h1>
         Users
-        <small><button type="button" href="<?php echo site_url("welcome/addnews");?>" class="btn btn-block btn-primary btn-xs">Add New</button></small>
+        <small><a href="<?php echo site_url("welcome/addusers");?>" class="btn btn-info btn-xs" role="button">Add New</a></small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Users</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>Users</a></li>
+        <li class="active">View</li>
       </ol>
     </section>
 
@@ -49,8 +49,8 @@
                   <td>Enricokirui@gmail.com</td>
                   <td><span class="label label-success">Admin</span></td>
                   <td>
-                    <button type="button" href="<?php echo site_url("welcome/editusers");?>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
-                    <button type="button" href="<?php echo site_url("welcome/editusers");?>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Delete</button>
+                    <a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#myModal">Edit</a>
+                    <a href="<?php echo site_url("welcome/deletenews");?>" class="btn btn-danger btn-xs" role="button">Delete</a>
                   </td>
                 </tr>
               </table>
@@ -58,7 +58,49 @@
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
-        </div>
+
+          <!-- Modal -->
+         <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit User</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">First Name</label>
+                  <input type="sname" class="form-control" id="exampleInputEmail1" placeholder="Enter First Name">
+                </div>
+                  <div class="form-group">
+                  <label for="exampleInputEmail1">Last Name</label>
+                  <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Enter Last Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <!-- select -->
+                <div class="form-group">
+                  <label>Role</label>
+                  <select class="form-control">
+                    <option>Admin</option>
+                    <option>User</option>
+                    <option>Student</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-info">Update</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+
       </div>
-    </section>
     </div>
+  </section>
+  </div>

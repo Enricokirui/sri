@@ -5,7 +5,7 @@
     <section class="content-header">
       <h1>
         Call to Action
-        <small>Add</small>
+        <small><a href="<?php echo site_url("welcome/callaction");?>" class="btn btn-info btn-xs" role="button">Add New</a></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -26,25 +26,33 @@
                  <!-- text input -->
                 <div class="form-group">
                   <label>Title</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
+                  <input type="text" class="form-control" placeholder="Enter title">
                 </div>
                 <!-- texteditor -->
                 <div class="form-group">
                   <label>Content</label>
                   <textarea id="editor2" name="editor1" rows="10" cols="80"></textarea>
                 </div>
-                <!-- Date -->
+              <!-- Date -->
                 <div class="form-group">
-                  <label>Date</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
+                  <label>Date:</label>
+
+                  <div class="input-group date">
+                    <div class="input-group-addon">
+                      <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right" id="datepicker">
+                  </div>
+                  <!-- /.input group -->
                 </div>
+                <!-- /.form group -->
                 <!-- link -->
                   <div class="form-group">
                   <label>Link</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
+                  <input type="text" class="form-control" placeholder="Enter Link">
                 </div>
                 <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-primary">Add</button>
               </div>
 
               </form>

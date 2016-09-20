@@ -5,11 +5,11 @@
     <section class="content-header">
       <h1>
         News & Events
-        <small>Edit</small>
+        <small>Add New</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Edit News & Events</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i>News & Events</a></li>
+        <li class="active">Add News or Event</li>
       </ol>
     </section>
 
@@ -18,7 +18,7 @@
  		  <!-- general form elements disabled -->
           <div class="box box-warning">
             <div class="box-header with-border">
-              <h3 class="box-title">Edit Events & News</h3>
+              <h3 class="box-title">Add News or Event</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -34,26 +34,17 @@
                   <label>Content</label>
                   <textarea id="editor2" name="editor1" rows="10" cols="80"></textarea>
                 </div>
-
-                <!-- radio -->
+                <!-- select -->
                 <div class="form-group">
-                <label>Categories</label>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                      News
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                      Events
-                    </label>
-                  </div>
+                  <label>Category</label>
+                  <select class="form-control">
+                    <option>News</option>
+                    <option>Events</option>
+                  </select>
                 </div>
 
                 <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-primary">Add</button>
               </div>
 
               </form>

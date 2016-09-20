@@ -51,6 +51,22 @@ class Welcome extends CI_Controller {
 		$this->load->view('templates/sidebar');
 	}
 
+	public function editnews()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('editnews');
+		$this->load->view('templates/footer');
+		$this->load->view('templates/sidebar');
+	}
+
+	public function deletenews()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('deletenews');
+		$this->load->view('templates/footer');
+		$this->load->view('templates/sidebar');
+	}
+
 	public function users()
 	{
 		$this->load->view('templates/header');
@@ -68,12 +84,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('templates/sidebar');
 	}
 
-		public function editusers()
+		public function deleteuser()
 	{
-		$this->load->view('templates/header');
-		$this->load->view('editusers');
-		$this->load->view('templates/footer');
-		$this->load->view('templates/sidebar');
+		// $this->load->view('templates/header');
+		$this->load->view('deleteuser');
+		// $this->load->view('templates/footer');
+		// $this->load->view('templates/sidebar');
 	}
 
 		public function callaction()

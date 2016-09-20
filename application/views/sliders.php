@@ -8,7 +8,7 @@
         <small>Add</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Settings </a></li>
         <li class="active">Home Sliders</li>
       </ol>
     </section>
@@ -23,20 +23,22 @@
             <!-- /.box-header -->
             <div class="box-body">
               <form role="form">
-                <!-- text input -->
+                <!-- Upload Image -->
                 <div class="form-group">
-                  <label>Upload Image</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
+                  <label for="exampleInputFile">Upload Image</label>
+                  <input type="file" id="exampleInputFile">
+
+                  <p class="help-block">Please select an image to be uploaded.</p>
                 </div>
                 <!-- text input -->
                 <div class="form-group">
-                  <label>Image name</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
+                  <label>Image Name</label>
+                  <input type="text" class="form-control" placeholder="Enter Image Name">
                 </div>
                  <!-- text input -->
                 <div class="form-group">
                   <label>Title</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
+                  <input type="text" class="form-control" placeholder="Enter Title">
                 </div>
                 <!-- texteditor -->
                 <div class="form-group">
@@ -48,7 +50,7 @@
                   <input type="text" class="form-control" placeholder="Enter ...">
                 </div>
                 <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-primary">Add</button>
               </div>
 
               </form>

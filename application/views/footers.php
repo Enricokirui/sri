@@ -8,7 +8,7 @@
         <small>Footers</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Settings</a></li>
+        <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
         <li class="active">Footers</li>
       </ol>
     </section>

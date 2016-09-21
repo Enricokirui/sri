@@ -8,7 +8,7 @@
         <small>Edit</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>News & Events</a></li>
+        <li><a href="#"><i class="fa fa-newspaper-o"></i>News & Events</a></li>
         <li class="active">Edit</li>
       </ol>
     </section>

@@ -49,6 +49,67 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
-$route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+	//$route['default_controller'] = 'admin/homeController';
+	$route['404_override'] = '';
+	$route['translate_uri_dashes'] = FALSE;
+
+	$route['admin'] = function()
+	{
+		return 'admin/HomeController';
+	};
+	$route['admin/callaction'] = function()
+	{
+		return 'admin/HomeController/callaction';
+	};
+	$route['admin/news'] = function()
+	{
+		return 'admin/HomeController/news';
+	};
+	$route['admin/addnews'] = function()
+	{
+		return 'admin/HomeController/addnews';
+	};
+	$route['admin/editnews'] = function()
+	{
+		return 'admin/HomeController/editnews';
+	};
+	$route['admin/users'] = function()
+	{
+		return 'admin/HomeController/users';
+	};
+	$route['admin/addusers'] = function()
+	{
+		return 'admin/HomeController/addusers';
+	};
+	$route['admin/abstracts'] = function()
+	{
+		return 'admin/HomeController/abstracts';
+	};
+	$route['admin/readabstracts'] = function()
+	{
+		return 'admin/HomeController/readabstracts';
+	};
+	$route['admin/researchers'] = function()
+	{
+		return 'admin/HomeController/researchers';
+	};
+	$route['admin/sliders'] = function()
+	{
+		return 'admin/HomeController/sliders';
+	};
+	$route['admin/footers'] = function()
+	{
+		return 'admin/HomeController/footers';
+	};
+	$route['admin/contacts'] = function()
+	{
+		return 'admin/HomeController/contacts';
+	};
+	$route['admin/introduction'] = function()
+	{
+		return 'admin/HomeController/introduction';
+	};
+	$route['admin/features'] = function()
+	{
+		return 'admin/HomeController/features';
+	};

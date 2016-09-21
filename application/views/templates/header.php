@@ -69,7 +69,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="<?php echo site_url("welcome");?>" class="logo">
+    <a href="<?php echo base_url("admin");?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -173,7 +173,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <li class="header">MAIN NAVIGATION</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="active treeview">
-          <a href="<?php echo site_url("welcome/dashboard");?>">
+          <a href="<?php echo base_url("admin");?>">
             <i class="fa fa-dashboard"></i> <span> Dashboard </span>
           </a>
         </li>
@@ -184,9 +184,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/callaction");?>"><i class="fa fa-circle-o"></i> Call to action</a></li>
-            <li><a href="<?php echo site_url("welcome/introduction");?>"> <i class="fa fa-circle-o"></i>Introduction</a></li>
-            <li><a href="<?php echo site_url("welcome/features");?>"><i class="fa fa-circle-o"></i> Features</a></li>
+            <li><a href="<?php echo base_url("admin/callaction");?>"><i class="fa fa-circle-o"></i> Call to action</a></li>
+            <li><a href="<?php echo base_url("admin/introduction");?>"> <i class="fa fa-circle-o"></i>Introduction</a></li>
+            <li><a href="<?php echo base_url("admin/features");?>"><i class="fa fa-circle-o"></i> Features</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -196,8 +196,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/news");?>"><i class="fa fa-circle-o"></i> View</a></li>
-            <li><a href="<?php echo site_url("welcome/addnews");?>"><i class="fa fa-circle-o"></i> New</a></li>
+            <li><a href="<?php echo base_url("admin/news");?>"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="<?php echo base_url("admin/addnews");?>"><i class="fa fa-circle-o"></i> New</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -207,9 +207,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/users");?>"><i class="fa fa-circle-o"></i> View</a></li>
-            <li><a href="<?php echo site_url("welcome/addusers");?>"><i class="fa fa-circle-o"></i> Add New</a></li>
+            <li><a href="<?php echo base_url("admin/users");?>"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="<?php echo base_url("admin/addusers");?>"><i class="fa fa-circle-o"></i> Add New</a></li>
           </ul>
+        </li>
+        <li class="treeview">
+          <a href="<?php echo base_url("admin/abstracts");?>">
+            <i class="fa fa-file-pdf-o"></i> <span> Abstracts </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="<?php echo base_url("admin/researchers");?>">
+            <i class="fa fa-graduation-cap"></i> <span> Researchers/Scholars </span>
+          </a>
         </li>
         <li class="treeview">
           <a href="#"><i class="fa fa-gear"></i> <span> Settings </span>
@@ -218,9 +228,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo site_url("welcome/sliders");?>"><i class="fa fa-circle-o"></i> Home Sliders</a></li>
-            <li><a href="<?php echo site_url("welcome/footers");?>"><i class="fa fa-circle-o"></i> Footer</a></li>
-            <li><a href="<?php echo site_url("welcome/contacts");?>"><i class="fa fa-circle-o"></i> Contacts</a></li>
+            <li><a href="<?php echo base_url("admin/sliders");?>"><i class="fa fa-circle-o"></i> Home Sliders</a></li>
+            <li><a href="<?php echo base_url("admin/footers");?>"><i class="fa fa-circle-o"></i> Footer</a></li>
+            <li><a href="<?php echo base_url("admin/contacts");?>"><i class="fa fa-circle-o"></i> Contacts</a></li>
           </ul>
         </li>
       </ul>

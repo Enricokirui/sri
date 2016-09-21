@@ -8,7 +8,7 @@
         <small>Add New</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>News & Events</a></li>
+        <li><a href="#"><i class="fa fa-newspaper-o"></i>News & Events</a></li>
         <li class="active">Add News or Event</li>
       </ol>
     </section>
@@ -26,7 +26,7 @@
                 <!-- text input -->
                 <div class="form-group">
                   <label>Title</label>
-                  <input type="text" class="form-control" placeholder="Enter ...">
+                  <input type="text" class="form-control" placeholder="Enter Title ">
                 </div>
 
                 <!-- textarea -->

@@ -5,10 +5,10 @@
     <section class="content-header">
       <h1>
         Call to Action
-        <small><a href="<?php echo site_url("welcome/callaction");?>" class="btn btn-info btn-xs" role="button">Add New</a></small>
+        <small><a href="<?php echo base_url("admin/callaction");?>" class="btn btn-info btn-xs" role="button">Add New</a></small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
         <li class="active">Call to Action</li>
       </ol>
     </section>

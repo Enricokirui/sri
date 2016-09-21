@@ -8,7 +8,7 @@
         <small>Add</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Settings </a></li>
+        <li><a href="#"><i class="fa fa-gear"></i> Settings </a></li>
         <li class="active">Home Sliders</li>
       </ol>
     </section>

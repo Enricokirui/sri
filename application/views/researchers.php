@@ -4,11 +4,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Users
-        <small><a href="<?php echo base_url("admin/addusers");?>" class="btn btn-info btn-xs" role="button">Add New</a></small>
+        Researchers/Scholars
+        <small>View</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-user"></i>Users</a></li>
+        <li><a href="#"><i class="fa fa-graduation-cap"></i>Researchers/Scholars</a></li>
         <li class="active">View</li>
       </ol>
     </section>
@@ -21,7 +21,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Users Table</h3>
+              <h3 class="box-title">Researchers/Scholars Table</h3>
 
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
@@ -37,20 +37,16 @@
             <div class="box-body table-responsive no-padding">
               <table class="table table-hover">
                 <tr>
-                  <th>Username</th>
                   <th>Names</th>
-                  <th>Email</th>
-                  <th>Role</th>
+                  <th>Status</th>
                   <th>Action</th>
                 </tr>
                 <tr>
-                  <td>EnricoKirui</td>
                   <td>Enrico Kirui</td>
-                  <td>Enricokirui@gmail.com</td>
-                  <td><span class="label label-success">Admin</span></td>
+                  <td><span class="label label-success">Delivered</span></td>
                   <td>
                     <a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#myModal">Edit</a>
-                    <a href="<?php echo base_url("admin/deletenews");?>" class="btn btn-danger btn-xs" role="button">Delete</a>
+                    <a href="<?php echo base_url("admin/deleteresearchers");?>" class="btn btn-danger btn-xs" role="button">Delete</a>
                   </td>
                 </tr>
               </table>
@@ -66,7 +62,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Edit User</h4>
+                <h4 class="modal-title">Edit Researcher</h4>
               </div>
               <div class="modal-body">
                 <div class="form-group">
@@ -77,13 +73,9 @@
                   <label for="exampleInputEmail1">Last Name</label>
                   <input type="name" class="form-control" id="exampleInputEmail1" placeholder="Enter Last Name">
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                </div>
                 <!-- select -->
                 <div class="form-group">
-                  <label>Role</label>
+                  <label>status</label>
                   <select class="form-control">
                     <option>Admin</option>
                     <option>User</option>
